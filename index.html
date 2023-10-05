@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Fisa</title>
+</head>
+<body>
+	<button onclick="openFolder()">Abrir pasta</button>
+	<script src="script.js"></script>
+	<script>
+		var teste = new Fisa();
+		var folder;
+
+		function openFolder(){
+			teste.openFolder().then(function(result){
+				folder = result;
+
+				for(var entry of folder.entries){
+					console.log(`${folder.getName()}/${entry.getName()}`);
+				}
+			})
+		}
+	</script>
+</body>
+</html>
