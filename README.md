@@ -2,7 +2,7 @@
 Library to access user file system with Javascript in browser
 
 ## How open a Folder
-```
+```javascript
 var folder;
 new Fisa().openFolder().then(function(result){
   folder = result;
@@ -10,7 +10,7 @@ new Fisa().openFolder().then(function(result){
 ```
 
 ## How open a File
-```
+```javascript
 var file;
 new Fisa().openFile().then(function(result){
   file = result;
@@ -18,7 +18,7 @@ new Fisa().openFile().then(function(result){
 ```
 
 ## Folder methods
-```
+```javascript
 folder.getName()
 folder.getType()
 folder.getSize()
@@ -47,7 +47,7 @@ folder.save()
 ```
 
 ## File methods
-```
+```javascript
 file.getName()
 file.getType()
 file.getSize()
